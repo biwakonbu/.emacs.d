@@ -9,6 +9,9 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
-(require 'install_packages)
+(require 'install-packages)
+
+
+(require 'init-loader-config)
 
 (provide 'init)
