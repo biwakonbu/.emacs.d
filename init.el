@@ -22,7 +22,8 @@
 (require 'install-packages)
 
 ; load color theme (Emacs theme framework)
-(load-theme 'vsc t)
+(load-theme 'vsc t t)
+(enable-theme 'vsc)
 
 (require 'init-loader-config)
 

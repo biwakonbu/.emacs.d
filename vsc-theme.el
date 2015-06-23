@@ -4,7 +4,8 @@
 (custom-theme-set-faces
  'vsc
  ;; 背景・文字・カーソル
- '(cursor ((t (:foreground "#F8F8F0"))))
+ '(cursor ((t (:background "#A8A8A8"))))
+
  '(default ((t (:background "#151515" :foreground "#D8D8D8"))))
 
  ;; 選択範囲
