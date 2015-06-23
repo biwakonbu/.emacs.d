@@ -1,4 +1,7 @@
 ; Emacs file auto-byte-compile
-(defun add-to-load-path-recompile (dir)
-  (add-to-list 'load-path dir)
-  (let (save-abbrevs) (byte-recompile-directory dir)))
+(require 'auto-async-byte-compile)
+(setq auto-async-byte-compile-excluede-files-regexp "~/.emacs.d/temp/")
+(add-hook 'emacs-lisp-mode-hook 'enable-auto-async-byte-compile-mode)
+
+; auto revert file-buffer
+(global-auto-revert-mode 1)
