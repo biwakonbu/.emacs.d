@@ -2,4 +2,4 @@
 (el-get-bundle helm)
 (el-get-bundle ddskk)
 
-(provide 'install_packages)
+(provide 'install-packages)
