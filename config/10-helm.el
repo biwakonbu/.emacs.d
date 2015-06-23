@@ -14,3 +14,6 @@
           (t
            'helm--completing-read-default))
          _))
+
+; kill helm C-h key. to backspace.
+(bind-key "C-h" nil helm-map)
