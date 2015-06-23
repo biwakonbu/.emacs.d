@@ -22,7 +22,7 @@
 (require 'install-packages)
 
 ; load color theme (Emacs theme framework)
-(load-theme 'molokai t)
+(load-theme 'vsc t)
 
 (require 'init-loader-config)
 
