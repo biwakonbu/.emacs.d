@@ -30,7 +30,7 @@
  '(font-lock-string-face ((t (:foreground "#E6DB74"))))
 
  ;; 特定キーワード
- '(font-lock-keyword-face ((t (:foreground "#F92672"))))
+ '(font-lock-keyword-face ((t (:foreground "#4A8ACA"))))
 
  ;; Boolean
  '(font-lock-constant-face((t (:foreground "#AE81BC"))))
