@@ -1,1 +1,3 @@
-(global-set-key "\C-h" 'delete-backward-char)
+(require 'bind-key)
+
+(bind-key* "C-h" 'delete-backward-char)
