@@ -5,8 +5,7 @@
  'vsc
  ;; 背景・文字・カーソル
  '(cursor ((t (:background "#A8A8A8"))))
-
- '(default ((t (:background "#151515" :foreground "#D8D8D8"))))
+ '(default ((t (:background "#171717" :foreground "#D8D8D8"))))
 
  ;; 選択範囲
  '(region ((t (:background "#15437A"))))
@@ -27,7 +26,7 @@
 
  ;; 変数名・変数の内容
  '(font-lock-variable-name-face ((t (:foreground "#FFFFFF"))))
- '(font-lock-string-face ((t (:foreground "#E6DB74"))))
+ '(font-lock-string-face ((t (:foreground "#D78181"))))
 
  ;; 特定キーワード
  '(font-lock-keyword-face ((t (:foreground "#4A8ACA"))))
