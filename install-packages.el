@@ -9,5 +9,8 @@
 
 ;; Screen setting
 ;;(el-get-bundle centerd-cursor-mode)
+(el-get-bundle yascroll)
+(el-get-bundle smooth-scroll)
+(el-get-bundle smooth-scrolling)
 
 (provide 'install-packages)

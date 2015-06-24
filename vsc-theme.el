@@ -23,6 +23,17 @@
    (show-paren-mode t)
    ;; 選択範囲をハイライト
    (transient-mark-mode t)
+   ;; 起動時の画面
+   (setq inhibit-startup-message t)
+   ;; scratch の文字
+   (setq initial-scratch-message "")
+   ;; 行番号表示
+   ;;(global-linum-mode t)
+   ;;(set-face-attribute 'linum nil
+   ;;:foreground "#bf616a"
+   ;;:height 0.9)
+   ;; 行番号フォーマット
+   (setq linum-format "%5d")
    ;; 戻り値
    nil)
  
