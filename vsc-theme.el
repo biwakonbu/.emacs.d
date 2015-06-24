@@ -18,7 +18,7 @@
    ;; カーソル
    (setq-default cursor-type 'bar)
    ;; 現在行ハイライト
-   ;;(global-hl-line-mode t)
+   (global-hl-line-mode t)
    ;; 対応する括弧をハイライト
    (show-paren-mode t)
    ;; 選択範囲をハイライト
@@ -34,8 +34,8 @@
                            :box (:line-width 1 :color "#333333")))))
 
  ;; ハイライト
- '(highlight ((t (:foreground "#000000" :background "#C4BE89"))))
- '(hl-line ((t (:background "#293739"))))
+ '(highlight ((t (:background "#C4BE89"))))
+ '(hl-line ((t (:background "#1F1F1F"))))
  
  ;; 関数名
  '(font-lock-function-name-face ((t (:foreground "#FFFFFF"))))
