@@ -12,11 +12,17 @@
 
  ;; ツールバー
  (tool-bar-mode 0)
- 
+
  ;; 戻り値が nil にならない物をまとめる (thme spec でエラーが起こる)
  (progn
    ;; カーソル
    (setq-default cursor-type 'bar)
+   ;; 現在行ハイライト
+   ;;(global-hl-line-mode t)
+   ;; 対応する括弧をハイライト
+   (show-paren-mode t)
+   ;; 選択範囲をハイライト
+   (transient-mark-mode t)
    ;; 戻り値
    nil)
  
@@ -30,7 +36,7 @@
  ;; ハイライト
  '(highlight ((t (:foreground "#000000" :background "#C4BE89"))))
  '(hl-line ((t (:background "#293739"))))
-
+ 
  ;; 関数名
  '(font-lock-function-name-face ((t (:foreground "#FFFFFF"))))
 
