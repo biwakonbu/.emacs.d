@@ -10,6 +10,16 @@
  ;; 選択範囲
  '(region ((t (:background "#15437A"))))
 
+ ;; ツールバー
+ (tool-bar-mode 0)
+ 
+ ;; 戻り値が nil にならない物をまとめる (thme spec でエラーが起こる)
+ (progn
+   ;; カーソル
+   (setq-default cursor-type 'bar)
+   ;; 戻り値
+   nil)
+ 
  ;; モードライン
  '(mode-line ((t (:foreground "#F8F8F2" :background "#000000"
                   :box (:line-width 1 :color "#000000" :style released-button)))))
