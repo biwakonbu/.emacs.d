@@ -33,9 +33,20 @@
    ;;:foreground "#bf616a"
    ;;:height 0.9)
    ;; 行番号フォーマット
-   (setq linum-format "%5d")
+   ;;(setq linum-format "%5d")
+   ;; スクロールバー
+   (require 'yascroll)
+   (global-yascroll-bar-mode 1)
+   ;; yascroll 表示時間
+   (setq yascroll:delay-to-hide nil)
    ;; 戻り値
    nil)
+
+ ;; スクロールバー
+ (scroll-bar-mode 0)
+
+ ;; yascroll カラー
+ '(yascroll:thumb-fringe ((t (:foreground "#383838" :background "#383838"))))
  
  ;; モードライン
  '(mode-line ((t (:foreground "#F8F8F2" :background "#000000"

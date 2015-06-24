@@ -1,10 +1,5 @@
 ;;-- interface settings --;;
 
-;; スクロールバー
-(require 'yascroll)
-(global-yascroll-bar-mode 1)
-(scroll-bar-mode 0)
-
 ;; スムーススクロール
 (require 'smooth-scroll)
 (smooth-scroll-mode t)
