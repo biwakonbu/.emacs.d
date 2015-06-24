@@ -4,3 +4,4 @@
 *.elc
 
 el-get/**
+elpa/**
