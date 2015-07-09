@@ -13,4 +13,11 @@
 (el-get-bundle smooth-scroll)
 (el-get-bundle smooth-scrolling)
 
+;; Programming mode
+(el-get-bundle web-mode)
+
+;; input support mode
+(el-get-bundle auto-complete)
+(el-get-bundle ac-helm)
+
 (provide 'install-packages)
