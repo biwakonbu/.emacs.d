@@ -3,3 +3,6 @@
 
 ;; indent mode
 (setq-default tab-with 4 indent-tabs-mode nil)
+
+;; auto fill mode
+(remove-hook 'text-mode-hook 'turn-on-auto-fill)
