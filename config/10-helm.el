@@ -1,4 +1,4 @@
-;-- helm-mode config --;
+;;-- helm-mode config --;;
 (require 'helm)
 (require 'helm-mode)
 
@@ -14,6 +14,3 @@
           (t
            'helm--completing-read-default))
          _))
-
-; kill helm C-h key. to backspace.
-(bind-key "C-h" nil helm-map)
