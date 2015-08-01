@@ -17,6 +17,7 @@
 (el-get-bundle web-mode)
 
 ;; markup mode
+(el-get-bundle slim-mode)
 (el-get-bundle scss-mode)
 (el-get-bundle helm-css-scss)
 
