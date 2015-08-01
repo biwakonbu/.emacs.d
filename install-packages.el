@@ -16,6 +16,10 @@
 ;; Programming mode
 (el-get-bundle web-mode)
 
+;; markup mode
+(el-get-bundle scss-mode)
+(el-get-bundle helm-css-scss)
+
 ;; input support mode
 (el-get-bundle auto-complete)
 (el-get-bundle ac-helm)
