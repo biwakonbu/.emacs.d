@@ -6,3 +6,6 @@
 
 ;; auto fill mode
 (remove-hook 'text-mode-hook 'turn-on-auto-fill)
+
+;; turn-off beep sound
+(setq ring-bell-function 'ignore)
