@@ -18,6 +18,9 @@
 (el-get-bundle avy)
 
 ;;;; Programming mode
+;; project
+(el-get-bundle projectile)
+
 ;; front-end
 (el-get-bundle web-mode)
 (el-get-bundle typescript)
@@ -25,6 +28,7 @@
 
 ;; python
 ;;(el-get-bundle py-autopep8)
+(el-get-bundle ac-python)
 (el-get-bundle flymake)
 (el-get-bundle flymake-cursor)
 (el-get-bundle flymake-easy)
@@ -33,6 +37,7 @@
 (el-get-bundle elpy)
 
 ;; markup mode
+(el-get-bundle ac-html)
 (el-get-bundle slim-mode)
 (el-get-bundle scss-mode)
 (el-get-bundle helm-css-scss)
