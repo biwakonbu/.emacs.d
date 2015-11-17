@@ -10,6 +10,7 @@
   (setq web-mode-script-offset 2)
   (setq web-mode-php-offset 2)
   (setq web-mode-java-offset 2)
+  (setq web-mode-code-indent-offset 2)
   (setq web-mode-asp-offset 2)
   (setq tab-width 2)
   (setq web-mode-engines-alist
