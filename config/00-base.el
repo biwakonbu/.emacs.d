@@ -9,3 +9,17 @@
 
 ;; turn-off beep sound
 (setq ring-bell-function 'ignore)
+
+;; ac-mode
+(require 'auto-complete-config)
+(ac-config-default)
+
+;; yasnippet
+(yas-global-mode t)
+
+;; projectile
+(require 'projectile)
+(projectile-global-mode)
+(setq projectile-enable-caching t)
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
