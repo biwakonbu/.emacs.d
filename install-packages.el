@@ -15,6 +15,7 @@
 
 ;; buffer search package
 (el-get-bundle anzu)
+(el-get-bundle avy)
 
 ;;;; Programming mode
 ;; front-end

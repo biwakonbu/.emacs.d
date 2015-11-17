@@ -11,8 +11,13 @@
 (bind-key* "M-%" 'anzu-query-replace)
 (bind-key* "C-M-%" 'anzu-query-replace-regexp)
 
+;; avy
+(bind-key* "C-'" 'avy-goto-char-2)
+(bind-key* "M-g M-g" 'avy-goto-line)
+
 ;; kill helm C-h key. to backspace.
 (bind-key "C-h" nil helm-map)
 
 ;; skk-auto-fill-mode
 (bind-key* "C-x j" 'skk-mode)
+
