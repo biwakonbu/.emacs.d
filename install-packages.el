@@ -13,6 +13,9 @@
 (el-get-bundle smooth-scroll)
 (el-get-bundle smooth-scrolling)
 
+;; buffer search package
+(el-get-bundle anzu)
+
 ;;;; Programming mode
 ;; front-end
 (el-get-bundle web-mode)
