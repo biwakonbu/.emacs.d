@@ -7,6 +7,11 @@
 (el-get-bundle ddskk)
 (el-get-bundle bind-key)
 
+;; input support mode
+(el-get-bundle auto-complete)
+(el-get-bundle ac-helm)
+(el-get-bundle ac-html)
+
 ;; Screen setting
 ;;(el-get-bundle centerd-cursor-mode)
 (el-get-bundle yascroll)
@@ -20,6 +25,7 @@
 ;;;; Programming mode
 ;; project
 (el-get-bundle projectile)
+(el-get-bundle magit)
 
 ;; front-end
 (el-get-bundle web-mode)
@@ -37,13 +43,8 @@
 (el-get-bundle elpy)
 
 ;; markup mode
-(el-get-bundle ac-html)
 (el-get-bundle slim-mode)
 (el-get-bundle scss-mode)
 (el-get-bundle helm-css-scss)
-
-;; input support mode
-(el-get-bundle auto-complete)
-(el-get-bundle ac-helm)
 
 (provide 'install-packages)

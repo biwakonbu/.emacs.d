@@ -3,7 +3,7 @@
 *~
 *.elc
 
-el-get/**
-elpa/**
-
-ac-comphist.dat
+lisp/el-get/**
+lisp/elpa/**
+lisp/ac-comphist.dat
+lisp/projectile-bookmarks.eld

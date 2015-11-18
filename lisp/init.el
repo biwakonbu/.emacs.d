@@ -16,7 +16,7 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
-(add-to-list 'load-path "~/.emacs.d/temp/")
+(add-to-list 'load-path "~/.emacs.d/lisp/temp/")
 
 ; get-el install packages
 (require 'install-packages)
