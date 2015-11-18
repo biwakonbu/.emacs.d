@@ -24,6 +24,10 @@
 
 ;;;; Programming mode
 ;; project
+(el-get-bundle neotree
+  :name neotree
+  :type github
+  :pkgname "jaypei/emacs-neotree")
 (el-get-bundle projectile)
 (el-get-bundle magit)
 
