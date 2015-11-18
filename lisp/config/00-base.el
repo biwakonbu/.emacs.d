@@ -23,3 +23,17 @@
 (setq projectile-enable-caching t)
 (setq projectile-completion-system 'helm)
 (helm-projectile-on)
+
+;; neotree
+(require 'neotree)
+(setq projectile-switch-project-action 'neotree-projectile-action)
+;; (defun neotree-project-dir ()
+;;   "Open NeoTree using the git root."
+;;   (interactive)
+;;   (let ((project-dir (ffip-project-root))
+;;         (file-name (buffer-file-name)))
+;;     (if project-dir
+;;         (progn
+;;           (neotree-dir project-dir)
+;;           (neotree-find file-name))
+;;       (message "Could not find git project root."))))
