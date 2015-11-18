@@ -21,3 +21,5 @@
 ;; skk-auto-fill-mode
 (bind-key* "C-x j" 'skk-mode)
 
+;; magit
+(bind-key* "C-c C-s" 'magit-status)
