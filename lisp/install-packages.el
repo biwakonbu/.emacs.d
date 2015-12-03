@@ -38,7 +38,6 @@
 
 ;; python
 ;;(el-get-bundle py-autopep8)
-(el-get-bundle ac-python)
 (el-get-bundle flymake)
 (el-get-bundle flymake-cursor)
 (el-get-bundle flymake-easy)
