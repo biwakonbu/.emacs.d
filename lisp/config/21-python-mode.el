@@ -15,10 +15,13 @@
         (list "pyflakes" (list local-file)))))
   (add-to-list 'flymake-allowed-file-name-masks
                '("\\.py\\'" flymake-pyflakes-init)))
- 
+
 (add-hook 'python-mode-hook
           (lambda ()
             (flymake-mode t)))
+
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
 
 ;; pyflakes
 (setq flymake-gui-warnings-enabled nil)

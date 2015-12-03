@@ -43,6 +43,7 @@
 (el-get-bundle flymake-cursor)
 (el-get-bundle flymake-easy)
 (el-get-bundle flymake-python-pyflakes)
+(el-get-bundle jedi)
 (el-get-bundle pyenv)
 (el-get-bundle elpy)
 
