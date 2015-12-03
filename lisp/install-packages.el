@@ -9,7 +9,7 @@
 
 ;; input support mode
 (el-get-bundle auto-complete)
-(el-get-bundle ac-helm)
+;; (el-get-bundle ac-helm)
 (el-get-bundle ac-html)
 
 ;; Screen setting

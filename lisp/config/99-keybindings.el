@@ -3,9 +3,9 @@
 ;; global key settings.
 (bind-key* "C-h" 'delete-backward-char)
 
-;; auto-compete with helm settings.
-(bind-key* "C-;" 'ac-complete-with-helm)
-(bind-key "C-;" 'ac-complete-with-helm ac-complete-mode-map)
+;; auto-compete with helm settinggs.
+(bind-key* "C-;" 'auto-complete)
+(bind-key "C-;" 'auto-complete ac-mode-map)
 
 ;; anzu keys
 (bind-key* "M-%" 'anzu-query-replace)
