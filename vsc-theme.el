@@ -13,6 +13,9 @@
  ;; ツールバー
  (tool-bar-mode 0)
 
+ ;; メニューバー
+ (menu-bar-mode 0)
+
  ;; 戻り値が nil にならない物をまとめる (thme spec でエラーが起こる)
  (progn
    ;; カーソル
