@@ -36,6 +36,10 @@
 (el-get-bundle typescript)
 (el-get-bundle tss)
 
+;; support
+(el-get-bundle yaml-mode)
+(el-get-bundle json-mode)
+
 ;; python
 ;;(el-get-bundle py-autopep8)
 (el-get-bundle flymake)
