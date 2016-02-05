@@ -22,6 +22,9 @@
 (el-get-bundle anzu)
 (el-get-bundle avy)
 
+;; util
+(el-get-bundle grep-edit)
+
 ;;;; Programming mode
 ;; project
 (el-get-bundle neotree

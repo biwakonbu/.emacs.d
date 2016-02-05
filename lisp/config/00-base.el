@@ -37,3 +37,6 @@
 ;;           (neotree-dir project-dir)
 ;;           (neotree-find file-name))
 ;;       (message "Could not find git project root."))))
+
+;; grep-edit
+(require 'grep-edit)
