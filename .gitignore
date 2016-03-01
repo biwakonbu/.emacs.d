@@ -1,10 +1,13 @@
+# emacs swap file
 *.*~
 \#*
 *~
 *.elc
 
+# cache files
 lisp/el-get/**
 lisp/elpa/**
 lisp/ac-comphist.dat
 lisp/projectile-bookmarks.eld
 lisp/*.cache
+lisp/persp-confs
