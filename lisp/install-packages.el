@@ -32,6 +32,7 @@
   :type github
   :pkgname "jaypei/emacs-neotree")
 (el-get-bundle projectile)
+(el-get-bundle Bad-ptr/persp-mode)
 (el-get-bundle magit)
 
 ;; front-end
