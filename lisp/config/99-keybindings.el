@@ -14,6 +14,9 @@
 ;; helm
 (bind-key "[TAB]" 'helm-execute-persistent-action helm-read-file-map)
 (bind-key "[TAB]" 'helm-execute-persistent-action helm-find-files-map)
+(bind-key* "M-x" 'helm-M-x)
+
+
 
 ;; anzu keys
 (bind-key* "M-%" 'anzu-query-replace)
