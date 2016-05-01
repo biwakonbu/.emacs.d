@@ -35,6 +35,24 @@
 (el-get-bundle elpa:persp-mode)
 (el-get-bundle magit)
 
+;; erlang
+(el-get-bundle erlang-mode)
+(el-get-bundle distel)
+(el-get-bundle edts
+  :name edts
+  :type github
+  :pkgname "tjarvstrand/edts")
+
+;; haskell
+(el-get-bundle haskell-mode
+  :name haskell-mode
+  :type github
+  :pkgname "haskell/haskell-mode")
+;;;; cabal-install
+;(el-get-bundle haskell-cabal)
+;;;; cabal install ghc-mod
+(el-get-bundle ghc-mod)
+
 ;; front-end
 (el-get-bundle web-mode)
 (el-get-bundle typescript)

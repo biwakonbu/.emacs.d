@@ -7,6 +7,8 @@
 ;; カーソルの位置を真ん中あたりに固定する
 ;;(require 'smooth-scrolling)
 
+;; font-size
+(set-face-attribute 'default nil :height 130)
 
 ;; anzu
 (require 'anzu)
