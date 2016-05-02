@@ -1,6 +1,7 @@
 (require 'web-mode)
 
 (add-to-list 'auto-mode-alist '("\\.html" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jinja" . web-mode))
 
 ;; インデント関係
 (defun web-mode-hook ()
@@ -14,6 +15,7 @@
   (setq web-mode-asp-offset 2)
   (setq tab-width 2)
   (setq web-mode-engines-alist
-        '(("mako" . "\\.html\\'"))))
+        '(("mako" . "\\.html\\'")
+          ("jinja" . "\\.jinja\\'"))))
 
 (add-hook 'web-mode-hook 'web-mode-hook)
