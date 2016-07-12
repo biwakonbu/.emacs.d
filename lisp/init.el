@@ -22,8 +22,8 @@
 (require 'install-packages)
 
 ; load color theme (Emacs theme framework)
-(load-theme 'vsc t t)
-(enable-theme 'vsc)
+(load-theme 'dracula-custom t t)
+(enable-theme 'dracula-custom)
 
 (require 'init-loader-config)
 
