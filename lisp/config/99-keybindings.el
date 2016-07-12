@@ -33,10 +33,3 @@
 
 ;; magit
 (bind-key* "C-c C-s" 'magit-status)
-
-;; neotree
-(bind-key* "<f8>" 'neotree-toggle)
-(bind-key* "C-c C-p" 'helm-projectile-switch-project)
-
-;; 公式ではこれなんだけど、project の変更がまとめて出来る方が良い感じ?
-;;(bind-key* "C-c C-p" 'neotree-project-dir)

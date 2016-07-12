@@ -2,6 +2,7 @@
 ;; Base Setting
 (el-get-bundle init-loader)
 (el-get-bundle helm)
+(el-get-bundle powerline)
 
 ;; Key setting
 (el-get-bundle ddskk)
@@ -26,12 +27,6 @@
 (el-get-bundle grep-edit)
 
 ;;;; Programming mode
-;; project
-(el-get-bundle neotree
-  :name neotree
-  :type github
-  :pkgname "jaypei/emacs-neotree")
-(el-get-bundle projectile)
 (el-get-bundle elpa:persp-mode)
 (el-get-bundle magit)
 
