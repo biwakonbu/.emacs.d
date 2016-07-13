@@ -17,6 +17,9 @@
 ;; yasnippet
 (yas-global-mode t)
 
+;; max call function
+(setq max-lisp-eval-depth 1000)
+
 ;; powerline
 (require 'powerline)
 (defun powerline-custom-theme ()
