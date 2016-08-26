@@ -74,5 +74,8 @@
 			     (powerline-render rhs)))))))
 (powerline-custom-theme)
 
+;; gist.el
+(require 'gist)
+
 ;; grep-edit
 (require 'grep-edit)

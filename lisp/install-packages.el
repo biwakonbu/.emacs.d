@@ -26,6 +26,23 @@
 ;; util
 (el-get-bundle grep-edit)
 
+;; gist.el packages.
+(el-get-bundle marshal.el
+  :name marshal.el
+  :type github
+  :pkgname "sigma/marshal.el")
+(el-get-bundle ht.el
+  :name ht.el
+  :type github
+  :pkgname "Wilfred/ht.el")
+(el-get-bundle gist)
+
+;; Dockerfile-mode.
+(el-get-bundle dockerfile-mode)
+
+;; fish-mode.
+(el-get-bundle emacs-fish)
+
 ;;;; Programming mode
 (el-get-bundle elpa:persp-mode)
 (el-get-bundle magit)
@@ -67,9 +84,14 @@
 (el-get-bundle pyenv)
 (el-get-bundle elpy)
 
+;; php-mode.
+
 ;; markup mode
 (el-get-bundle slim-mode)
 (el-get-bundle scss-mode)
 (el-get-bundle helm-css-scss)
+
+;; dockerfile mode.
+(el-get-bundle dockerfile-mode)
 
 (provide 'install-packages)
