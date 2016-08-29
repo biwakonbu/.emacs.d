@@ -17,6 +17,9 @@
 ;; yasnippet
 (yas-global-mode t)
 
+;; max call function
+(setq max-lisp-eval-depth 1000)
+
 ;; powerline
 (require 'powerline)
 (defun powerline-custom-theme ()
@@ -31,7 +34,7 @@
                           (face1 (if active 'powerline-active1 'powerline-inactive1))
                           (face2 (if active 'powerline-active2 'powerline-inactive2))
                           (separator-left (intern (format "powerline-%s-%s"
-							  (powerline-current-separator)
+                                                          (powerline-current-separator)
                                                           (car powerline-default-separator-dir))))
                           (separator-right (intern (format "powerline-%s-%s"
                                                            (powerline-current-separator)
@@ -59,19 +62,19 @@
                                        (powerline-raw (list (nyan-create)) face2 'l))))
                           (rhs (list (powerline-raw global-mode-string face2 'r)
                                      (funcall separator-right face2 face1)
-				     (unless window-system
-				       (powerline-raw (char-to-string #xe0a1) face1 'l))
-				     (powerline-raw "%4l" face1 'l)
-				     (powerline-raw ":" face1 'l)
-				     (powerline-raw "%3c" face1 'r)
-				     (funcall separator-right face1 mode-line)
-				     (powerline-raw " ")
-				     (powerline-raw "%6p" mode-line 'r)
+                                     (unless window-system
+                                       (powerline-raw (char-to-string #xe0a1) face1 'l))
+                                     (powerline-raw "%4l" face1 'l)
+                                     (powerline-raw ":" face1 'l)
+                                     (powerline-raw "%3c" face1 'r)
+                                     (funcall separator-right face1 mode-line)
+                                     (powerline-raw " ")
+                                     (powerline-raw "%6p" mode-line 'r)
                                      (when powerline-display-hud
                                        (powerline-hud face2 face1)))))
-		     (concat (powerline-render lhs)
-			     (powerline-fill face2 (powerline-width rhs))
-			     (powerline-render rhs)))))))
+                     (concat (powerline-render lhs)
+                             (powerline-fill face2 (powerline-width rhs))
+                             (powerline-render rhs)))))))
 (powerline-custom-theme)
 
 ;; gist.el
@@ -79,3 +82,25 @@
 
 ;; grep-edit
 (require 'grep-edit)
+
+;; add shell path to exec-path.
+(let ((shellpath
+       (split-string
+        (shell-command-to-string "env | egrep '^PATH=' | sed 's/PATH=//; s/:/ /g'"))))
+      (dolist (path shellpath)
+        (add-to-list 'exec-path path)))
+
+;; migemo
+(if (executable-find "cmigemo")
+    (progn
+      (require 'migemo)
+      (setq migemo-command "cmigemo")
+      (setq migemo-options '("-q" "--emacs" "-i" "\a"))
+      (setq migemo-dictionary "/usr/local/Cellar/cmigemo/20110227/share/migemo/utf-8/migemo-dict")
+      ;;(setq migemo-dictionary "/usr/share/cmigemo/utf-8/migemo-dict")
+      (setq migemo-coding-system 'utf-8-unix)
+      (setq migemo-user-dictionary nil)
+      (setq migemo-regex-dictionary nil)
+      (load-library "migemo")
+      (migemo-init))
+  (message "not found cmigemo command.")

@@ -3,10 +3,10 @@
 (el-get-bundle init-loader)
 (el-get-bundle helm)
 (el-get-bundle powerline)
+(el-get-bundle use-package)
 
 ;; Key setting
 (el-get-bundle ddskk)
-(el-get-bundle bind-key)
 
 ;; input support mode
 (el-get-bundle auto-complete)
@@ -44,16 +44,22 @@
 (el-get-bundle emacs-fish)
 
 ;;;; Programming mode
-(el-get-bundle elpa:persp-mode)
-(el-get-bundle magit)
+(el-get-bundle persp-mode
+  :name persp-mode
+  :type github
+  :pkgname "Bad-ptr/persp-mode.el")
+(if (executable-find "git")
+    (el-get-bundle magit))
 
 ;; erlang
-(el-get-bundle erlang-mode)
-(el-get-bundle distel)
-(el-get-bundle edts
-  :name edts
-  :type github
-  :pkgname "tjarvstrand/edts")
+(if (executable-find "erlc")
+    (progn
+      (el-get-bundle erlang-mode)
+      (el-get-bundle distel)
+      (el-get-bundle edts
+        :name edts
+        :type github
+        :pkgname "tjarvstrand/edts")))
 
 ;; haskell
 (el-get-bundle haskell-mode
@@ -73,6 +79,8 @@
 ;; support
 (el-get-bundle yaml-mode)
 (el-get-bundle json-mode)
+(el-get-bundle migemo)
+(el-get-bundle helm-migemo)
 
 ;; python
 ;;(el-get-bundle py-autopep8)
