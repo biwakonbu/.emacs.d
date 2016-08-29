@@ -62,6 +62,8 @@
 ;; support
 (el-get-bundle yaml-mode)
 (el-get-bundle json-mode)
+(el-get-bundle migemo)
+(el-get-bundle helm-migemo)
 
 ;; python
 ;;(el-get-bundle py-autopep8)
