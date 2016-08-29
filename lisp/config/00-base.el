@@ -103,4 +103,6 @@
       (setq migemo-regex-dictionary nil)
       (load-library "migemo")
       (migemo-init))
-  (message "not found cmigemo command.")
+  (message "not found cmigemo command."))
+
+
