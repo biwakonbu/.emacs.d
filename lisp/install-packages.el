@@ -98,6 +98,7 @@
 (el-get-bundle slim-mode)
 (el-get-bundle scss-mode)
 (el-get-bundle helm-css-scss)
+(el-get-bundle markdown-mode)
 
 ;; dockerfile mode.
 (el-get-bundle dockerfile-mode)
