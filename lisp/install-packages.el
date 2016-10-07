@@ -94,6 +94,11 @@
 
 ;; php-mode.
 
+;; lisp-mode.
+(el-get-bundle slime)
+(el-get-bundle slime-company)
+(el-get-bundle slime-extension)
+
 ;; markup mode
 (el-get-bundle slim-mode)
 (el-get-bundle scss-mode)
