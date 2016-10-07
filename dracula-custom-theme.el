@@ -41,7 +41,7 @@
       (region-background "#15437a") ;; update
       (str     "#df717a") ;; update
       (type    "#a6e22a")
-      (var     "#f8f8f2")
+      (var     "#f1e572")
       (warning "#ffb86c")
       (rainbow-1 "#f8f8f2")
       (rainbow-2 "#8be9fd")
