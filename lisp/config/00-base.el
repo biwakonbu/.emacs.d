@@ -23,6 +23,9 @@
 ;; anti aging power-line.
 (setq ns-use-srgb-colorspace nil)
 
+(mode-icons-mode)
+(setq mode-icons-grayscale-transform nil)
+
 (require 'spaceline-config)
 (spaceline-emacs-theme)
 

@@ -2,14 +2,18 @@
 ;; Base Setting
 (el-get-bundle init-loader)
 (el-get-bundle helm)
-(el-get-bundle powerline)
 (el-get-bundle use-package)
 
 ;; Key setting
 (el-get-bundle ddskk)
 
 ;; appearance
+(el-get-bundle powerline)
 (el-get-bundle spaceline)
+(el-get-bundle mode-icons
+  :name mode-icons
+  :type github
+  :pkgname "ryuslash/mode-icons")
 
 ;; input support mode
 (el-get-bundle auto-complete)
