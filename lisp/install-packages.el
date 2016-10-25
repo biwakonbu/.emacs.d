@@ -8,6 +8,9 @@
 ;; Key setting
 (el-get-bundle ddskk)
 
+;; appearance
+(el-get-bundle spaceline)
+
 ;; input support mode
 (el-get-bundle auto-complete)
 ;; (el-get-bundle ac-helm)
@@ -95,8 +98,14 @@
 ;; php-mode.
 
 ;; lisp-mode.
-(el-get-bundle slime)
-(el-get-bundle slime-company)
+(el-get-bundle slime
+  :name slime
+  :type github
+  :pkgname "slime/slime")
+(el-get-bundle slime-company
+  :name slime-company
+  :type github
+  :pkgname "anwyn/slime-company")
 (el-get-bundle slime-extension)
 
 ;; markup mode
