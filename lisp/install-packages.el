@@ -58,6 +58,11 @@
 (if (executable-find "git")
     (el-get-bundle magit))
 
+;; elixir
+(quelpa 'elixir t)
+(quelpa 'alchemist t)
+(quelpa 'ac-alchemist t)
+
 ;; erlang
 (if (executable-find "erlc")
     (progn
