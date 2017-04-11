@@ -1,3 +1,9 @@
+# quelpa package
+quelpa/**
+
+# viper
+viper
+
 # emacs swap file
 *.*~
 \#*
