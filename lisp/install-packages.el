@@ -1,62 +1,65 @@
 ;;-- install packages --;;
+(quelpa 'spacemacs-theme t)
+
 ;; Base Setting
-(el-get-bundle init-loader)
-(el-get-bundle helm)
-(el-get-bundle use-package)
+(quelpa 'init-loader t)
+(quelpa 'helm t)
+(quelpa 'use-package t)
 
 ;; Key setting
-(el-get-bundle ddskk)
+(quelpa 'ddskk t)
 
 ;; appearance
-(el-get-bundle powerline)
-(el-get-bundle spaceline)
-(el-get-bundle mode-icons
-  :name mode-icons
-  :type github
-  :pkgname "ryuslash/mode-icons")
+(quelpa 'spacemacs-theme t)
+(quelpa 'powerline t)
+(quelpa 'spaceline t)
+(quelpa 'mode-icons t)
 
 ;; input support mode
-(el-get-bundle auto-complete)
+(quelpa 'auto-complete t)
 ;; (el-get-bundle ac-helm)
-(el-get-bundle ac-html)
+(quelpa 'ac-html t)
 
 ;; Screen setting
 ;;(el-get-bundle centerd-cursor-mode)
-(el-get-bundle yascroll)
-(el-get-bundle smooth-scroll)
-(el-get-bundle smooth-scrolling)
+(quelpa 'yascroll t)
+(quelpa 'smooth-scroll t)
+(quelpa 'smooth-scrolling t)
 
 ;; buffer search package
-(el-get-bundle anzu)
-(el-get-bundle avy)
+(quelpa 'anzu t)
+(quelpa 'avy t)
 
 ;; util
-(el-get-bundle grep-edit)
+(quelpa 'grep-edit t)
 
 ;; gist.el packages.
-(el-get-bundle marshal.el
-  :name marshal.el
-  :type github
-  :pkgname "sigma/marshal.el")
-(el-get-bundle ht.el
-  :name ht.el
-  :type github
-  :pkgname "Wilfred/ht.el")
-(el-get-bundle gist)
+(quelpa '(marshal
+          :repo "sigma/marshal.el"
+          :fetcher github
+          :stable t))
+
+(quelpa '(ht
+          :repo "Wilfred/ht.el"
+          :fetcher github
+          :stable t))
+
+(quelpa 'gist)
 
 ;; Dockerfile-mode.
-(el-get-bundle dockerfile-mode)
+(quelpa 'dockerfile-mode)
 
 ;; fish-mode.
-(el-get-bundle emacs-fish)
+(quelpa 'emacs-fish)
 
 ;;;; Programming mode
-(el-get-bundle persp-mode
-  :name persp-mode
-  :type github
-  :pkgname "Bad-ptr/persp-mode.el")
+(quelpa '(persp-mode
+          :repo "Bad-ptr/persp-mode.el"
+          :fetcher github
+          :stable t))
+
 (if (executable-find "git")
-    (el-get-bundle magit))
+    (quelpa 'magit t))
 
 ;; elixir
 (quelpa 'elixir t)
@@ -66,64 +69,48 @@
 ;; erlang
 (if (executable-find "erlc")
     (progn
-      (el-get-bundle erlang-mode)
-      (el-get-bundle distel)
-      (el-get-bundle edts
-        :name edts
-        :type github
-        :pkgname "tjarvstrand/edts")))
+      (quelpa 'erlang-mode t)
+      (quelpa 'distel t)
+      (quelpa 'edts t)))
 
 ;; haskell
-(el-get-bundle haskell-mode
-  :name haskell-mode
-  :type github
-  :pkgname "haskell/haskell-mode")
+(quelpa 'haskell-mode t)
 ;;;; cabal-install
-;(el-get-bundle haskell-cabal)
+;(quelpa 'haskell-cabal)
 ;;;; cabal install ghc-mod
-(el-get-bundle ghc-mod)
+(quelpa 'ghc-mod t)
 
 ;; front-end
-(el-get-bundle web-mode)
-(el-get-bundle typescript)
-(el-get-bundle tss)
+(quelpa 'web-mode t)
 
 ;; support
-(el-get-bundle yaml-mode)
-(el-get-bundle json-mode)
-(el-get-bundle migemo)
-(el-get-bundle helm-migemo)
+(quelpa 'yaml-mode t)
+(quelpa 'json-mode t)
+(quelpa 'migemo t)
+(quelpa 'helm-migemo t)
 
 ;; python
 ;;(el-get-bundle py-autopep8)
-(el-get-bundle flymake)
-(el-get-bundle flymake-cursor)
-(el-get-bundle flymake-easy)
-(el-get-bundle flymake-python-pyflakes)
-(el-get-bundle jedi)
-(el-get-bundle pyenv)
-(el-get-bundle elpy)
-
-;; php-mode.
+(quelpa 'flymake t)
+(quelpa 'flymake-cursor t)
+(quelpa 'flymake-easy t)
+(quelpa 'flymake-python-pyflakes t)
+(quelpa 'jedi t)
+(quelpa 'pyenv t)
+(quelpa 'elpy t)
 
 ;; lisp-mode.
-(el-get-bundle slime
-  :name slime
-  :type github
-  :pkgname "slime/slime")
-(el-get-bundle slime-company
-  :name slime-company
-  :type github
-  :pkgname "anwyn/slime-company")
-(el-get-bundle slime-extension)
+(quelpa 'slime t)
+(quelpa 'slime-company t)
+(quelpa 'slime-extension t)
 
 ;; markup mode
-(el-get-bundle slim-mode)
-(el-get-bundle scss-mode)
-(el-get-bundle helm-css-scss)
-(el-get-bundle markdown-mode)
+(quelpa 'slim-mode t)
+(quelpa 'scss-mode t)
+(quelpa 'helm-css-scss t)
+(quelpa 'markdown-mode t)
 
 ;; dockerfile mode.
-(el-get-bundle dockerfile-mode)
+(quelpa 'dockerfile-mode t)
 
 (provide 'install-packages)
