@@ -54,6 +54,5 @@
 
 ;; markup mode
 (quelpa 'helm-css-scss t)
-(quelpa 'markdown-mode t)
 
 (provide 'install-packages)

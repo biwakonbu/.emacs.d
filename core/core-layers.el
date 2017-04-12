@@ -15,6 +15,7 @@
     +lang/elixir
     +lang/html
     +lang/yaml
+    +lang/markdown
 
     +source-control/git
     +source-control/github))
