@@ -12,13 +12,22 @@
                    "emacs requires Emacs version %s or above.")
            emacs-version emacs-min-version)
   (load-file (concat (file-name-directory load-file-name)
-                     "core/load-paths.el"))
+                     "core/core-load-paths.el"))
 
   (if (require 'quelpa nil t)
       (quelpa-self-upgrade)
     (with-temp-buffer
       (url-insert-file-contents "https://raw.github.com/quelpa/quelpa/master/bootstrap.el")
       (eval-buffer)))
+
+  (quelpa
+   '(quelpa-use-package
+     :fetcher github
+     :repo "quelpa/quelpa-use-package"))
+  (require 'quelpa-use-package)
+
+  (require 'core-layers)
+  (layers/init)
 
   ;; el-get install
   (unless (require 'el-get nil 'noerror)
@@ -56,6 +65,9 @@
  '(anzu-replace-to-string-separator " => ")
  '(anzu-search-threshold 1000)
  '(edts-inhibit-package-check t)
+ '(package-selected-packages
+   (quote
+    (pyenv-mode pythonic quelpa-use-package markdown-mode helm-css-scss scss-mode slim-mode slime-company slime macrostep elpy yasnippet pyvenv highlight-indentation find-file-in-project ivy jedi jedi-core python-environment epc ctable concurrent deferred flymake-cursor helm-migemo migemo json-mode json-snatcher json-reformat yaml-mode web-mode haskell-mode magit magit-popup git-commit with-editor persp-mode dockerfile-mode gist gh logito pcache marshal ht avy anzu smooth-scrolling smooth-scroll yascroll ac-html f mode-icons spaceline powerline ddskk cdb ccc use-package diminish bind-key helm helm-core async init-loader spacemacs-theme smartparens quelpa flymake-python-pyflakes ac-alchemist)))
  '(ruby-insert-encoding-magic-comment nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

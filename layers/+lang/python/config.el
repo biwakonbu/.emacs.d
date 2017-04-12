@@ -1,33 +1,23 @@
-;; pyenv package. url: https://github.com/cyberved/pyenv.el
-(require 'pyenv)
-(setq pyenv-show-active-python-in-modeline nil)
-(setq pyenv-modeline-function 'pyenv--modeline-plain)
-(global-pyenv-mode)
+(defvar python-fill-column 79
+  "Fill column value for python buffers")
 
-;;(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
-(require 'ac-python)
-(require 'tramp-cmds)
+(defvar python-tab-width 4
+  "Tab width value for python buffers")
 
-;; flymake
-(when (load "flymake" t)
-  (defun flymake-pyflakes-init ()
-     ; Make sure it's not a remote buffer or flymake would not work
-     (when (not (subsetp (list (current-buffer)) (tramp-list-remote-buffers)))
-      (let* ((temp-file (flymake-init-create-temp-buffer-copy
-                         'flymake-create-temp-inplace))
-             (local-file (file-relative-name
-                          temp-file
-                          (file-name-directory buffer-file-name))))
-        (list "pyflakes" (list local-file)))))
-  (add-to-list 'flymake-allowed-file-name-masks
-               '("\\.py\\'" flymake-pyflakes-init)))
+(defvar python-auto-set-local-pyenv-version 'on-visit
+  "Automatically set pyenv version from \".python-version\".
 
-(add-hook 'python-mode-hook
-          (lambda ()
-            (flymake-mode t)))
+Possible values are `on-visit', `on-project-switch' or `nil'.")
 
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)
+(defvar python-auto-set-local-pyenv-version 'on-visit
+  "Automatically set pyenv version from \".python-version\".
 
-;; pyflakes
-(setq flymake-gui-warnings-enabled nil)
+Possible values are `on-visit', `on-project-switch' or `nil'.")
+
+(defvar python-auto-set-local-pyvenv-virtualenv 'on-visit
+  "Automatically set pyvenv virtualenv from \".venv\".
+
+Possible values are `on-visit', `on-project-switch' or `nil'.")
+
+(defvar python-sort-imports-on-save nil
+  "If non-nil, automatically sort imports on save.")
