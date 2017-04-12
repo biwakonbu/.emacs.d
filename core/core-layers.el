@@ -10,7 +10,8 @@
     +lang/common-lisp
     +lang/erlang
     +lang/elixir
-    +lang/html))
+    +lang/html
+    +source-control/git))
 
 
 ;; layers/functions.

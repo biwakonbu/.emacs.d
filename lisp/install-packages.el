@@ -52,9 +52,6 @@
           :fetcher github
           :stable t))
 
-(if (executable-find "git")
-    (quelpa 'magit t))
-
 ;; support
 (quelpa 'yaml-mode t)
 (quelpa 'json-mode t)
