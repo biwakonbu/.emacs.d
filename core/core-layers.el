@@ -3,7 +3,8 @@
 ;; install all layers.
 
 (defconst core/install-layers
-  '(+lang/python
+  '(+shell/environment
+    +lang/python
     +lang/common-lisp
     +lang/elixir))
 
