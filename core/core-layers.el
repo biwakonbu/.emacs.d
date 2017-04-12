@@ -4,7 +4,8 @@
 
 (defconst core/install-layers
   '(+lang/python
-    +lang/common-lisp))
+    +lang/common-lisp
+    +lang/elixir))
 
 
 ;; layers/functions.

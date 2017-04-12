@@ -61,16 +61,6 @@
 (if (executable-find "git")
     (quelpa 'magit t))
 
-;; elixir
-(quelpa 'elixir t)
-(quelpa 'alchemist t)
-(quelpa 'ac-alchemist t)
-
-;; elixir
-(quelpa 'elixir-mode t)
-(quelpa 'alchemist t)
-(quelpa 'ac-alchemist t)
-
 ;; erlang
 (if (executable-find "erlc")
     (progn
