@@ -46,12 +46,6 @@
 
 (quelpa 'gist)
 
-;; Dockerfile-mode.
-(quelpa 'dockerfile-mode)
-
-;; fish-mode.
-(quelpa 'emacs-fish)
-
 ;;;; Programming mode
 (quelpa '(persp-mode
           :repo "Bad-ptr/persp-mode.el"
