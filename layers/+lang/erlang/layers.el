@@ -1,6 +1,5 @@
 (defconst erlang/layers/install-packages
   '(erlang-mode
-    distel
     edts))
 
 (if (executable-find "erlc")

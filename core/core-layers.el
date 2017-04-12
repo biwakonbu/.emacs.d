@@ -6,6 +6,7 @@
   '(+shell/environment
     +lang/python
     +lang/common-lisp
+    +lang/erlang
     +lang/elixir))
 
 
