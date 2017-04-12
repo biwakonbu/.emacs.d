@@ -1,4 +1,4 @@
-;; layers.el is spacemacs layer like libraries.
+;; core-layers.el is spacemacs layer like libraries.
 
 ;; install all layers.
 
