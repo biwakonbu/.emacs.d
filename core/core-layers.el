@@ -8,6 +8,7 @@
 
     +tools/docker
 
+    +lang/javascript
     +lang/python
     +lang/common-lisp
     +lang/erlang

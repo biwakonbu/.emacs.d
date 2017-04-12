@@ -40,7 +40,6 @@
           :stable t))
 
 ;; support
-(quelpa 'json-mode t)
 (quelpa 'migemo t)
 (quelpa 'helm-migemo t)
 
