@@ -61,13 +61,6 @@
 (if (executable-find "git")
     (quelpa 'magit t))
 
-;; erlang
-(if (executable-find "erlc")
-    (progn
-      (quelpa 'erlang-mode t)
-      (quelpa 'distel t)
-      (quelpa 'edts t)))
-
 ;; front-end
 (quelpa 'web-mode t)
 
