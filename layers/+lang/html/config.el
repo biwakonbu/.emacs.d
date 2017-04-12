@@ -1,4 +1,4 @@
-(require 'web-mode)
+;; web mode.
 
 (add-to-list 'auto-mode-alist '("\\.html" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.volt" . web-mode))
@@ -21,3 +21,23 @@
           ("jinja" . "\\.jinja\\'"))))
 
 (add-hook 'web-mode-hook 'web-mode-hook)
+
+
+;; scss mode.
+
+(add-to-list 'auto-mode-alist '("\\.scss" . scss-mode))
+
+(defun scss-mode-hook ()
+  "Hooks for Scss mode."
+  (setq css-indent-offset 2))
+(add-hook 'scss-mode-hook 'scss-mode-hook)
+
+;; slim mode.
+
+(add-to-list 'auto-mode-alist '("\\.slim" . slim-mode))
+
+;; hook
+(defun slim-mode-hook ()
+  "Hooks for Slim mode."
+  (setq slim-indent-offset 2))
+(add-hook 'slim-mode-hook 'slim-mode-hook)

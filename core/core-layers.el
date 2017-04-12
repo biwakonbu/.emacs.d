@@ -9,7 +9,8 @@
     +lang/python
     +lang/common-lisp
     +lang/erlang
-    +lang/elixir))
+    +lang/elixir
+    +lang/html))
 
 
 ;; layers/functions.

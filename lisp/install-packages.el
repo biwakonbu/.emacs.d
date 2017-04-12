@@ -61,9 +61,6 @@
 (if (executable-find "git")
     (quelpa 'magit t))
 
-;; front-end
-(quelpa 'web-mode t)
-
 ;; support
 (quelpa 'yaml-mode t)
 (quelpa 'json-mode t)
@@ -80,8 +77,6 @@
 (quelpa 'smartparens t)
 
 ;; markup mode
-(quelpa 'slim-mode t)
-(quelpa 'scss-mode t)
 (quelpa 'helm-css-scss t)
 (quelpa 'markdown-mode t)
 
