@@ -78,13 +78,6 @@
       (quelpa 'distel t)
       (quelpa 'edts t)))
 
-;; haskell
-(quelpa 'haskell-mode t)
-;;;; cabal-install
-;(quelpa 'haskell-cabal)
-;;;; cabal install ghc-mod
-(quelpa 'ghc-mod t)
-
 ;; front-end
 (quelpa 'web-mode t)
 
