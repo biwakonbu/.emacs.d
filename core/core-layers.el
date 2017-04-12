@@ -3,7 +3,8 @@
 ;; install all layers.
 
 (defconst core/install-layers
-  '(+lang/python))
+  '(+lang/python
+    +lang/common-lisp))
 
 
 ;; layers/functions.
