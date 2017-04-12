@@ -11,7 +11,8 @@
     +lang/erlang
     +lang/elixir
     +lang/html
-    +source-control/git))
+    +source-control/git
+    +source-control/github))
 
 
 ;; layers/functions.

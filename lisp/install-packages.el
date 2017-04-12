@@ -33,19 +33,6 @@
 ;; util
 (quelpa 'grep-edit t)
 
-;; gist.el packages.
-(quelpa '(marshal
-          :repo "sigma/marshal.el"
-          :fetcher github
-          :stable t))
-
-(quelpa '(ht
-          :repo "Wilfred/ht.el"
-          :fetcher github
-          :stable t))
-
-(quelpa 'gist)
-
 ;;;; Programming mode
 (quelpa '(persp-mode
           :repo "Bad-ptr/persp-mode.el"
