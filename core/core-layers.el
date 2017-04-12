@@ -5,12 +5,16 @@
 (defconst core/install-layers
   '(+shell/environment
     +shell/fish
+
     +tools/docker
+
     +lang/python
     +lang/common-lisp
     +lang/erlang
     +lang/elixir
     +lang/html
+    +lang/yaml
+
     +source-control/git
     +source-control/github))
 
