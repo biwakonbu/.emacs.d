@@ -19,6 +19,8 @@
 (defvar start-directory user-emacs-directory)
 (defconst core-directory
   (expand-file-name (concat start-directory "core/")))
+(defconst layers-directory
+  (expand-file-name (concat start-directory "layers/")))
 (defconst lisp-directory
   (expand-file-name (concat start-directory "lisp/")))
 (defconst temp-directory

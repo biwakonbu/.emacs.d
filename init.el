@@ -14,6 +14,12 @@
   (load-file (concat (file-name-directory load-file-name)
                      "core/load-paths.el"))
 
+  (if (require 'quelpa nil t)
+      (quelpa-self-upgrade)
+    (with-temp-buffer
+      (url-insert-file-contents "https://raw.github.com/quelpa/quelpa/master/bootstrap.el")
+      (eval-buffer)))
+
   ;; el-get install
   (unless (require 'el-get nil 'noerror)
     (with-current-buffer
@@ -40,3 +46,20 @@
     (setq user-emacs-directory (file-name-directory load-file-name)))
 
   (require 'init-loader-config))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(anzu-deactivate-region t)
+ '(anzu-mode-lighter "")
+ '(anzu-replace-to-string-separator " => ")
+ '(anzu-search-threshold 1000)
+ '(edts-inhibit-package-check t)
+ '(ruby-insert-encoding-magic-comment nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
