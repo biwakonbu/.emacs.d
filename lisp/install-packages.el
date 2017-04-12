@@ -85,7 +85,4 @@
 (quelpa 'helm-css-scss t)
 (quelpa 'markdown-mode t)
 
-;; dockerfile mode.
-(quelpa 'dockerfile-mode t)
-
 (provide 'install-packages)
