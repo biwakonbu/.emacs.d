@@ -4,6 +4,8 @@
 
 (defconst core/install-layers
   '(+shell/environment
+    +shell/fish
+    +tools/docker
     +lang/python
     +lang/common-lisp
     +lang/erlang
