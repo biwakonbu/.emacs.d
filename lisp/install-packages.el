@@ -100,16 +100,8 @@
 (quelpa 'flymake-cursor t)
 (quelpa 'flymake-easy t)
 (quelpa 'flymake-python-pyflakes t)
-(quelpa 'jedi t)
-(quelpa 'pyenv t)
-(quelpa 'elpy t)
 
 (quelpa 'smartparens t)
-
-;; lisp-mode.
-(quelpa 'slime t)
-(quelpa 'slime-company t)
-(quelpa 'slime-extension t)
 
 ;; markup mode
 (quelpa 'slim-mode t)
