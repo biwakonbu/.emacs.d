@@ -58,6 +58,11 @@
 (if (executable-find "git")
     (el-get-bundle magit))
 
+;; elixir
+(quelpa 'elixir-mode t)
+(quelpa 'alchemist t)
+(quelpa 'ac-alchemist t)
+
 ;; erlang
 (if (executable-find "erlc")
     (progn
@@ -100,6 +105,8 @@
 (el-get-bundle elpy)
 
 ;; php-mode.
+
+(quelpa 'smartparens t)
 
 ;; lisp-mode.
 (el-get-bundle slime
