@@ -1,4 +1,4 @@
-;; core-layers.el is spacemacs layer like libraries.
+;; core-glayers.el is spacemacs layer like libraries.
 
 ;; install all layers.
 
@@ -10,6 +10,7 @@
 
     +lang/javascript
     +lang/python
+    +lang/go
     +lang/common-lisp
     +lang/erlang
     +lang/elixir
