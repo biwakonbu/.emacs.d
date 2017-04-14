@@ -1,3 +1,21 @@
+;; ac-mode
+(ac-config-default)
+
+;; anti aging power-line.
+(setq ns-use-srgb-colorspace nil)
+(mode-icons-mode)
+(setq mode-icons-grayscale-transform nil)
+
+(require 'spaceline-config)
+(spaceline-emacs-theme)
+
+;; (require 'spaceline-config)
+;; other-theme
+;; (spaceline-spaceemacs-theme)
+
+(setq powerline-default-separator 'slant)
+(spaceline-compile)
+
 ;;-- interface settings --;;
 
 ;; スムーススクロール

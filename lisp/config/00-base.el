@@ -12,30 +12,12 @@
 ;; turn-off beep sound
 (setq ring-bell-function 'ignore)
 
-;; ac-mode
-(require 'auto-complete-config)
-(ac-config-default)
-
 ;; yasnippet
 (yas-global-mode t)
 
 ;; max call function
 (setq max-lisp-eval-depth 1000)
 
-;; anti aging power-line.
-(setq ns-use-srgb-colorspace nil)
-
-(mode-icons-mode)
-(setq mode-icons-grayscale-transform nil)
-
-(require 'spaceline-config)
-(spaceline-emacs-theme)
-
-;; other-theme
-;; (spaceline-spaceemacs-theme)
-
-(setq powerline-default-separator 'slant)
-(spaceline-compile)
 
 ;; gist.el
 (require 'gist)

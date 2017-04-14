@@ -3,7 +3,8 @@
 ;; install all layers.
 
 (defconst core/install-layers
-  '(+shell/environment
+  '(+emacs/face
+    +shell/environment
     +shell/fish
 
     +tools/docker

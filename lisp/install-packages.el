@@ -1,6 +1,4 @@
 ;;-- install packages --;;
-(quelpa 'spacemacs-theme t)
-
 ;; Base Setting
 (quelpa 'init-loader t)
 (quelpa 'helm t)
@@ -9,15 +7,7 @@
 ;; Key setting
 (quelpa 'ddskk t)
 
-;; appearance
-(quelpa 'spacemacs-theme t)
-(quelpa 'powerline t)
-(quelpa 'spaceline t)
-(quelpa 'mode-icons t)
-
 ;; input support mode
-(quelpa 'auto-complete t)
-;; (el-get-bundle ac-helm)
 (quelpa 'ac-html t)
 
 ;; Screen setting
