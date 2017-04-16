@@ -1,7 +1,7 @@
 ;;-- install packages --;;
 ;; Base Setting
 (quelpa 'init-loader t)
-(quelpa 'helm t)
+
 (quelpa 'use-package t)
 
 ;; Key setting
@@ -31,7 +31,6 @@
 
 ;; support
 (quelpa 'migemo t)
-(quelpa 'helm-migemo t)
 
 ;; python
 ;;(el-get-bundle py-autopep8)
@@ -41,8 +40,5 @@
 (quelpa 'flymake-python-pyflakes t)
 
 (quelpa 'smartparens t)
-
-;; markup mode
-(quelpa 'helm-css-scss t)
 
 (provide 'install-packages)

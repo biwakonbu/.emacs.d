@@ -4,6 +4,9 @@
 
 (defconst core/install-layers
   '(+emacs/face
+
+    +completion/helm
+
     +shell/environment
     +shell/fish
 
