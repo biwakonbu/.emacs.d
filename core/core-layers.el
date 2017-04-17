@@ -3,7 +3,8 @@
 ;; install all layers.
 
 (defconst core/install-layers
-  '(+emacs/face
+  '(+emacs/base
+    +emacs/face
 
     +completion/helm
 
