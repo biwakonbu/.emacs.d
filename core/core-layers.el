@@ -4,6 +4,7 @@
 
 (defconst core/install-layers
   '(+emacs/base
+    +emacs/search
     +emacs/face
 
     +completion/helm

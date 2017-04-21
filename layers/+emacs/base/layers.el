@@ -2,6 +2,7 @@
   '(migemo
     grep-edit
     ddskk
+    bind-key
     (persp-mode
      :repo "Bad-ptr/persp-mode.el"
      :fetcher github

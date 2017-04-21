@@ -37,9 +37,6 @@
       (goto-char (point-max))
       (eval-print-last-sexp)))
 
-  ;; el-get install packages
-  (require 'install-packages)
-
   ;; load color theme (Emacs theme framework)
   (load-theme 'dracula-custom t t)
   (enable-theme 'dracula-custom)
@@ -52,9 +49,7 @@
         (setq default-directory "~/")
         (setq command-line-default-directory "~/")))
   (when load-file-name
-    (setq user-emacs-directory (file-name-directory load-file-name)))
-
-  (require 'init-loader-config))
+    (setq user-emacs-directory (file-name-directory load-file-name))))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
