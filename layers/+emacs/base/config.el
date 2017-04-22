@@ -21,6 +21,9 @@
 ;; max call function
 (setq max-lisp-eval-depth 1000)
 
+;; automation resize window
+(golden-ratio-mode t)
+
 
 ;; migemo
 (if (executable-find "cmigemo")
