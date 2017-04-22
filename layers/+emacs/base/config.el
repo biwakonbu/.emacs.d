@@ -3,6 +3,9 @@
 ;; auto revert file-buffer
 (global-auto-revert-mode 1)
 
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+
 ;; indent mode
 (setq-default tab-with 2 indent-tabs-mode nil)
 

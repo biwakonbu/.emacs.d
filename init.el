@@ -3,6 +3,10 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
+(setq package-archives
+      '(("gnu" . "http://elpa.gnu.org/packages/")
+        ("melpa" . "http://melpa.org/packages/")
+        ("org" . "http://orgmode.org/elpa/")))
 
 (setq gc-cons-threshold 100000000)
 (defconst emacs-min-version   "24.4" "Minimal version of Emacs.")
@@ -38,8 +42,7 @@
       (eval-print-last-sexp)))
 
   ;; load color theme (Emacs theme framework)
-  (load-theme 'dracula-custom t t)
-  (enable-theme 'dracula-custom)
+  ;; (load-theme 'dracula-custom t t)
 
   ;; StartUp Dirctory Settings
   ;; for Mac OS X Marvericks

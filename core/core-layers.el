@@ -7,6 +7,8 @@
     +emacs/search
     +emacs/face
 
+    +themes/themes-megapack
+
     +completion/helm
 
     +shell/environment
