@@ -3,6 +3,10 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
+(setq package-archives
+      '(("gnu" . "http://elpa.gnu.org/packages/")
+        ("melpa" . "http://melpa.org/packages/")
+        ("org" . "http://orgmode.org/elpa/")))
 
 (setq gc-cons-threshold 100000000)
 (defconst emacs-min-version   "24.4" "Minimal version of Emacs.")
@@ -37,12 +41,8 @@
       (goto-char (point-max))
       (eval-print-last-sexp)))
 
-  ;; el-get install packages
-  (require 'install-packages)
-
   ;; load color theme (Emacs theme framework)
-  (load-theme 'dracula-custom t t)
-  (enable-theme 'dracula-custom)
+  ;; (load-theme 'dracula-custom t t)
 
   ;; StartUp Dirctory Settings
   ;; for Mac OS X Marvericks
@@ -52,9 +52,7 @@
         (setq default-directory "~/")
         (setq command-line-default-directory "~/")))
   (when load-file-name
-    (setq user-emacs-directory (file-name-directory load-file-name)))
-
-  (require 'init-loader-config))
+    (setq user-emacs-directory (file-name-directory load-file-name))))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

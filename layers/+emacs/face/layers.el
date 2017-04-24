@@ -1,6 +1,5 @@
 (defconst emacs-face/layers/install-packages
-  '(auto-complete
-    spacemacs-theme
+  '(spacemacs-theme
     powerline
     spaceline
     mode-icons

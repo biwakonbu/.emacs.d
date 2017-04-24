@@ -3,6 +3,9 @@
 ;; auto revert file-buffer
 (global-auto-revert-mode 1)
 
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+
 ;; indent mode
 (setq-default tab-with 2 indent-tabs-mode nil)
 
@@ -18,6 +21,18 @@
 ;; max call function
 (setq max-lisp-eval-depth 1000)
 
+;; automation resize window
+(golden-ratio-mode t)n
+
+;; compilation-filter-hook
+(add-hook 'compilation-filter-hook
+          '(lambda
+             (let ((inhibit-read-only t))
+               (ansi-color-apply-on-region compilation-filter-start (point-max)))))
+
+;; highlihting todo mode hook
+(add-hook 'hl-todo-mode 'text-mode-hook)
+(add-hook 'hl-todo-mode 'prog-mode-hook)
 
 ;; migemo
 (if (executable-find "cmigemo")
