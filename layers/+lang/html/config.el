@@ -2,7 +2,6 @@
 
 (add-to-list 'auto-mode-alist '("\\.html" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.volt" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.php" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jinja" . web-mode))
 
 ;; インデント関係

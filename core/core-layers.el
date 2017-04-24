@@ -8,6 +8,8 @@
 
     +completion/helm
 
+    +checkers/syntax-cheking
+
     +shell/environment
     +shell/fish
 
@@ -15,6 +17,7 @@
 
     +lang/javascript
     +lang/python
+    +lang/php
     +lang/go
     +lang/common-lisp
     +lang/erlang
