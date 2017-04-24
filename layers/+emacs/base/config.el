@@ -22,7 +22,7 @@
 (setq max-lisp-eval-depth 1000)
 
 ;; automation resize window
-(golden-ratio-mode t)n
+(golden-ratio-mode t)
 
 ;; compilation-filter-hook
 (add-hook 'compilation-filter-hook
