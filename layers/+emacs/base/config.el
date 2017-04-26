@@ -1,4 +1,5 @@
 (setq auto-save-default nil)
+(setq inhibit-startup-screen t)
 
 ;; auto revert file-buffer
 (global-auto-revert-mode 1)
