@@ -52,7 +52,8 @@
         (setq default-directory "~/")
         (setq command-line-default-directory "~/")))
   (when load-file-name
-    (setq user-emacs-directory (file-name-directory load-file-name))))
+    (setq user-emacs-directory (file-name-directory load-file-name)))
+  (powerline-reset))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
