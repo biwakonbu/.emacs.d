@@ -2,7 +2,7 @@
 (ac-config-default)
 
 ;; anti aging power-line.
-(setq ns-use-srgb-colorspace nil)
+(setq ns-use-srgb-colorspace t)
 (mode-icons-mode)
 (setq mode-icons-grayscale-transform nil)
 
