@@ -6,7 +6,7 @@
 (mode-icons-mode)
 (setq mode-icons-grayscale-transform nil)
 
-(require 'spaceline-config)
+(use-package spaceline-config)
 (spaceline-emacs-theme)
 
 ;; (require 'spaceline-config)
