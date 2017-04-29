@@ -42,6 +42,14 @@ When PFX is non-nil, ignore the prompt and just install"
 ;; paradox mode on
 (spaceline-toggle-paradox-menu-on)
 
+;; anti aging power-line.
+(setq ns-use-srgb-colorspace t)
+(mode-icons-mode)
+(setq mode-icons-grayscale-transform nil)
+
+(use-package spaceline-config)
+(spaceline-emacs-theme)
+
 ;; (require 'spaceline-config)
 ;; other-theme
 ;; (spaceline-spaceemacs-theme)
