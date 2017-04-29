@@ -23,7 +23,7 @@
 (setq max-lisp-eval-depth 1000)
 
 ;; startup window size
-(set-frame-parameter nil 'fullscreen 'fullboth)
+(set-frame-parameter nil 'fullscreen 'maximized)
 
 ;; automation resize window
 (golden-ratio-mode t)
