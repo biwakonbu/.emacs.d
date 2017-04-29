@@ -1,5 +1,9 @@
 recentf
 
+# fonts
+fonts/**
+!fonts/.gitkeep
+
 # quelpa package
 quelpa/**
 
