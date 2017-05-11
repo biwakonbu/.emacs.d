@@ -9,7 +9,8 @@
 
     +themes/themes-megapack
 
-    +completion/helm
+    ;; +completion/helm
+    +completion/ivy
     +completion/company
 
     +checkers/syntax-cheking
