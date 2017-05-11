@@ -1,6 +1,9 @@
 (defconst clojure/layers/install-pakckages
   '(clojure-mode
     cider
-    clj-refactor))
+    clj-refactor
+    subword-mode
+    paredit
+    rainbow-delimiters))
 
 (layers/install-packages clojure/layers/install-pakckages)
