@@ -26,9 +26,6 @@ When PFX is non-nil, ignore the prompt and just install"
       (message "%s Successfully %s `all-the-icons' fonts to `%s'!"
                (all-the-icons-wicon "stars" :v-adjust 0.0) (if known-dest? "installed" "downloaded") font-dest))))
 
-;; (use-package spaceline-all-the-icons :after spaceline)
-;; (use-package spaceline :after powerline :ensure t
-;;   :config (setq mode-line-format (spaceline-all-the-icons-theme))
 (use-package spaceline-config
   :init
   (progn
