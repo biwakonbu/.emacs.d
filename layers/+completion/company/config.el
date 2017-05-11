@@ -8,6 +8,7 @@
   (bind-keys :map company-mode-map
              ("C-;" . company-complete))
   (bind-keys :map company-active-map
+             ("C-h" . nil)
              ("C-n" . company-select-next)
              ("C-p" . company-select-previous)
              ("C-s" . company-search-words-regexp))
