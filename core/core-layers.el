@@ -10,6 +10,7 @@
     +themes/themes-megapack
 
     +completion/helm
+    +completion/company
 
     +checkers/syntax-cheking
 
