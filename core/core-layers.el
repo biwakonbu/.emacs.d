@@ -23,6 +23,7 @@
     +lang/php
     +lang/go
     +lang/common-lisp
+    +lang/clojure
     +lang/erlang
     +lang/elixir
     +lang/html

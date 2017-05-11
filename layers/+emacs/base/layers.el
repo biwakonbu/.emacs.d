@@ -5,7 +5,7 @@
     grep-edit
     ddskk
     bind-key
-    golden-ratio
+    ;; golden-ratio
     popup
     (persp-mode
      :repo "Bad-ptr/persp-mode.el"
