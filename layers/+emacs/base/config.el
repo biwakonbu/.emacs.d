@@ -26,7 +26,7 @@
 (set-frame-parameter nil 'fullscreen 'maximized)
 
 ;; automation resize window
-(golden-ratio-mode t)
+;; (golden-ratio-mode t)
 
 ;; compilation-filter-hook
 (add-hook 'compilation-filter-hook
