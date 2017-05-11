@@ -15,7 +15,7 @@
     (error (concat "Your version of Emacs (%s) is too old. "
                    "emacs requires Emacs version %s or above.")
            emacs-version emacs-min-version)
-  (load-file (concat (file-name-directory load-file-name)
+  (load-file (concat (file-name-directory "~/.emacs.d/init.el")
                      "core/core-load-paths.el"))
 
   (if (require 'quelpa nil t)
@@ -53,7 +53,7 @@
         (setq command-line-default-directory "~/")))
   (when load-file-name
     (setq user-emacs-directory (file-name-directory load-file-name)))
-  (powerline-reset))
+  (spaceline-compile))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
