@@ -1,6 +1,7 @@
 (defconst base/layers/install-packages
   '(ansi-colors
     migemo
+    yasnippet
     hl-todo
     grep-edit
     ddskk

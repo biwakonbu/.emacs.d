@@ -1,5 +1,5 @@
 ;; ac-mode
-(ac-config-default)
+;; (ac-config-default)
 
 ;; (mode-icons-mode)
 ;; (use-package font-lock+ :ensure t :after all-the-icons)
