@@ -23,3 +23,6 @@ ac-comphist.dat
 projectile-bookmarks.eld
 *.cache
 persp-confs
+
+# history file
+transient/**
