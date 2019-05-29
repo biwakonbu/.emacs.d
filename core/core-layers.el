@@ -23,11 +23,11 @@
     +lang/javascript
     +lang/python
     +lang/php
-    +lang/go
+    ;; +lang/go
     +lang/common-lisp
-    +lang/clojure
-    +lang/erlang
-    +lang/elixir
+    ;; +lang/clojure
+    ;; +lang/erlang
+    ;; +lang/elixir
     +lang/html
     +lang/yaml
     +lang/markdown
