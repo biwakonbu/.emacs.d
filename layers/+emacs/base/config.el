@@ -1,3 +1,9 @@
+;;; base --- config.el -*- lexical-binding: t; -*-
+
+;;; Commentary:
+
+;;; Code:
+
 (setq auto-save-default nil)
 (setq inhibit-startup-screen t)
 
@@ -39,10 +45,10 @@
 (add-hook 'hl-todo-mode 'text-mode-hook)
 (add-hook 'hl-todo-mode 'prog-mode-hook)
 
+(require 'migemo)
 ;; migemo
 (if (executable-find "cmigemo")
     (progn
-      (require 'migemo)
       (setq migemo-command "cmigemo")
       (setq migemo-options '("-q" "--emacs" "-i" "\a"))
       (cond
@@ -62,6 +68,7 @@
 (setq persp-add-on-switch-or-display t) ;バッファを切り替えたら見えるようにする
 (persp-mode 1)
 (defun persp-register-buffers-on-create ()
+  "Persp register create buffer."
   (interactive)
   (dolist (bufname (condition-case _
                        (helm-comp-read
@@ -72,3 +79,5 @@
                      (quit nil)))
     (persp-add-buffer (get-buffer bufname))))
 (add-hook 'persp-activated-hook 'persp-register-buffers-on-create)
+
+;;; config.el ends here
