@@ -104,3 +104,7 @@ When PFX is non-nil, ignore the prompt and just install"
                                 (font-lock-mode t))))
 
 (global-yascroll-bar-mode 1)
+(set-face-attribute
+ 'yascroll:thumb-fringe nil
+ :foreground "gray21"
+ :background "gray21")
