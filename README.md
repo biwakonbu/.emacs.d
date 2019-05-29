@@ -11,5 +11,9 @@ use private and working settings.
 $ pip install -r requirements.txt
 ```
 
+### dumb-jump
+
+- [the_silver_searcher](https://github.com/ggreer/the_silver_searcher#installing)
+
 ### Emacs packages
-start emacs.
+start emacs.k
