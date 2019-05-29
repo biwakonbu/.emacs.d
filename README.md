@@ -6,6 +6,10 @@ use private and working settings.
 
 ## DEPENDENCY
 
+### MacOS
+
+- gls commands (gnu ls)
+
 ### Python packages
 ```
 $ pip install -r requirements.txt
