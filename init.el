@@ -11,6 +11,11 @@
 (setq gc-cons-threshold 100000000)
 (defconst emacs-min-version   "24.4" "Minimal version of Emacs.")
 
+;; MacOS is ls command haven't --dired option becase brew install gls in coreutils and path setting.
+(when (equal system-type 'darwin)
+  (let ((gls "/usr/local/bin/gls"))
+    (if (file-exists-p gls) (setq insert-directory-program gls))))
+
 (if (not (version<= emacs-min-version emacs-version))
     (error (concat "Your version of Emacs (%s) is too old. "
                    "emacs requires Emacs version %s or above.")
