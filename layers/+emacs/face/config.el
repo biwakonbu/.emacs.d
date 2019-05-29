@@ -3,7 +3,11 @@
 
 ;; (mode-icons-mode)
 ;; (use-package font-lock+ :ensure t :after all-the-icons)
-;; (use-package all-the-icons :if window-system)
+(use-package all-the-icons)
+
+;; mode-icons is ivy.xpm file invalid when modeline height bug appear.
+;; fix: remove windows path with leave only file name after xpm file open with text-mode.
+;; ex-line: static char * ivy_xpm[] = {
 
 (defun all-the-icons-custom-install-fonts (&optional pfx)
   "Helper function to download and install the latests fonts based on OS.
@@ -40,11 +44,13 @@ When PFX is non-nil, ignore the prompt and just install"
 (spaceline-toggle-paradox-menu-on)
 
 ;; anti aging power-line.
-(setq ns-use-srgb-colorspace t)
+;; (setq ns-use-srgb-colorspace t)
 (mode-icons-mode)
 (setq mode-icons-grayscale-transform nil)
 
 (use-package spaceline-config)
+(setq powerline-height 16)
+
 (spaceline-emacs-theme)
 
 ;; (require 'spaceline-config)
@@ -61,7 +67,7 @@ When PFX is non-nil, ignore the prompt and just install"
 ;;(require 'smooth-scrolling)
 
 ;; font-size
-(set-face-attribute 'default nil :height 130)
+(set-face-attribute 'default nil :height 120)
 
 ;; anzu
 (require 'anzu)
