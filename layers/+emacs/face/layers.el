@@ -7,6 +7,7 @@
     spaceline-config
     spacemacs-theme
     mode-icons
+    yascroll
     (all-the-icons
      :repo "domtronn/all-the-icons"
      :fetcher github)

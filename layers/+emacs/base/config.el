@@ -6,6 +6,7 @@
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)
+(scroll-bar-mode 0)
 
 ;; indent mode
 (setq-default tab-with 2 indent-tabs-mode nil)

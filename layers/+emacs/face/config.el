@@ -96,3 +96,5 @@ When PFX is non-nil, ignore the prompt and just install"
                               (if font-lock-mode
                                   nil
                                 (font-lock-mode t))))
+
+(global-yascroll-bar-mode 1)

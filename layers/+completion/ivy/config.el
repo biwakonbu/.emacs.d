@@ -9,7 +9,7 @@
         '((t . ivy--regex-fuzzy)))
   (setq ivy-initial-inputs-alist nil)
   (bind-keys :map ivy-mode-map
-             ("C-s" . swiper)
+             ;; ("C-s" . swiper)
              ("M-x" . counsel-M-x)
              ("C-x C-f" . counsel-find-file)
              ("<f1> f" . counsel-describe-function)
