@@ -4,6 +4,8 @@
     counsel
     ivy
     ivy-hydra
-    wgrep))
+    wgrep
+    yasnippet
+    ivy-yasnippet))
 
 (layers/install-packages ivy/layers/install-packages)

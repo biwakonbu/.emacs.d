@@ -7,6 +7,8 @@
 (defconst company/layers/install-packages
   '(company
     company-statistics
+    yasnippet
+    auto-yasnippet
     ;; (git-complete
     ;;  :repo "zk-phi/git-complete"
     ;;  :fetcher github)

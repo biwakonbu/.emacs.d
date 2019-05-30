@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# contributor: ryo higasigawa
+# name: package-define
+# key: package-define
+# --
+<?php
+
+namespace $1;
+
+class $2 {
+
+    public function __construct() {
+
+    }
+
+}
