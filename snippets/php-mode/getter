@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# contributor: unzip
+# name: getter
+# key: getter
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+public function get$1($2) : $3
+{
+    $4
+    return $5
+}
