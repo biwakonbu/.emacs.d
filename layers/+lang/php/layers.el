@@ -6,7 +6,8 @@
      :repo "arnested/php-extras"
      :fetcher github)
     web-mode
-    php-mode))
+    php-mode
+    ))
     ;;phpcbf))
 
 (layers/install-packages php/layers/install-packages)
