@@ -6,6 +6,7 @@
 
 (setq auto-save-default nil)
 (setq inhibit-startup-screen t)
+(electric-indent-mode 0)
 
 ;; auto revert file-buffer
 (global-auto-revert-mode 1)

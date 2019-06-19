@@ -23,10 +23,10 @@
   (setq web-mode-engines-alist
         '(;("mako" . "\\.html\\'")
           ("jinja" . "\\.jinja\\'")
-          ("blade" . "\\.blade\\."))))
+          ("blade" . "\\.blade\\.")))
+  (setq web-mode-enable-auto-indentation nil))
 
 (add-hook 'web-mode-hook 'web-mode-hook)
-
 
 ;; scss mode.
 
