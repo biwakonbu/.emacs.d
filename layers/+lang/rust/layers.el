@@ -1,5 +1,6 @@
 (defconst rust/layers/install-packages
   '(rust-mode
-    flycheck-rust))
+    flycheck-rust
+    toml-mode))
 
 (layers/install-packages rust/layers/install-packages)
