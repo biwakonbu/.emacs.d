@@ -12,6 +12,7 @@
      :repo "Bad-ptr/persp-mode.el"
      :fetcher github
      :stable t)
-    zoom-frm))
+    zoom-frm
+    editorconfig))
 
 (layers/install-packages base/layers/install-packages)

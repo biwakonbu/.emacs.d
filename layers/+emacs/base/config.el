@@ -81,4 +81,9 @@
     (persp-add-buffer (get-buffer bufname))))
 (add-hook 'persp-activated-hook 'persp-register-buffers-on-create)
 
+(use-package editorconfig
+  :ensure t
+  :config
+  (editorconfig-mode 1))
+
 ;;; config.el ends here

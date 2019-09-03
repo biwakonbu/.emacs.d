@@ -10,10 +10,10 @@
 
 ;; (add-to-list 'load-path (concat temp-directory "php-extras/"))
 
-(setq php-mode-force-pear t)
-(add-hook 'php-mode-hook
-          (lambda ()
-            (setq c-basic-offset 4)
-            (setq tab-with 4)))
+;; (setq php-mode-force-pear t)
+;; (add-hook 'php-mode-hook
+;;           (lambda ()
+;;             (setq c-basic-offset 4)
+;;             (setq tab-with 4)))
 
 ;;; config.el ends here
