@@ -8,9 +8,7 @@
     spacemacs-theme
     mode-icons
     yascroll
-    (all-the-icons
-     :repo "domtronn/all-the-icons"
-     :fetcher github)
+    all-the-icons
     (spaceline-all-the-icons
      :repo "domtronn/spaceline-all-the-icons.el"
      :fetcher github)))
