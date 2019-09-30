@@ -36,6 +36,7 @@
   (require 'quelpa-use-package)
 
   (require 'core-layers)
+  (require 'core-funcs)
   (layers/init)
 
   ;; el-get install
