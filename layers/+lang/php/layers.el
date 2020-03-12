@@ -4,8 +4,12 @@
     php-auto-snippets
     (php-extras
      :repo "arnested/php-extras"
-     :fetcher github)
-    web-mode
+     :fetcher github
+     t)
+    (web-mode
+     :repo "fxbois/web-mode"
+     :fetcher github
+     t)
     php-mode
     ))
     ;;phpcbf))

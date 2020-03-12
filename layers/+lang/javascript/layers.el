@@ -5,10 +5,20 @@
 ;;; Code:
 
 (defconst javascript/layers/install-package
-  '(json-mode
-    vue-mode
+  '((json-mode
+     :repo "joshwnj/json-mode"
+     :fetcher github
+     t)
+    (mmm-mode
+     :repo "purcell/mmm-mode"
+     :fetcher github
+     t)
+    (vue-mode
+     :repo "AdamNiederer/vue-mode"
+     :fetcher github
+     :stable t
+     t)
     js-mode
-    js2-mode
     ))
 
 (layers/install-packages javascript/layers/install-package)
