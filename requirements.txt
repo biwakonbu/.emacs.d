@@ -3,7 +3,7 @@ pep8==1.6.2
 pyflakes==1.0.0
 jedi==0.9.0
 rope==0.10.3
-ipython==4.0.0
+ipython==7.16.3
 ipython-genutils==0.1.0
 epc==0.0.5
 jedi==0.9.0
